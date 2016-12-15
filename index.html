@@ -3,8 +3,68 @@
     <head>
         <title>PetShop Jhony Cão</title>
         <meta charset="UTF-8" />  
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/materialize.min.css">
     </head>
-    <body>
+    <body style="background-color:#e65100 ">
         
+        <div class="container">
+                <div class="row " style="margin-top:20%">
+                    <div class="col s12 m7 ">
+                        <div class="card horizontal">
+                        <div class="card-stacked">
+                            <div class="card-content">
+                             <div class="row">
+                                <div class="col s12">
+                                    <ul class="tabs">
+                                        <li class="tab col s6"><a href="#test1">FAZER LOGIN</a></li>
+                                        <li class="tab col s6"><a href="#test4">SE CADASTRE</a></li>
+                                    </ul>
+                                    </div>
+                                    <div id="test1" class="col s12">
+                                             <div class="row">
+                                                <form class="col s12">
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                        <input id="email" type="email" class="validate" placeholder="username/email">
+                                                        </div>
+                                                        <div class="input-field col s12">
+                                                        <input id="password" type="password" class="validate" placeholder="password">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                    </div>
+                                    <div id="test4" class="col s12 "style="display:none">Test 4</div>
+                                </div>
+                            </div>
+                            <div class="card-action center">
+                            <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m5 ">
+                        <div class="card horizontal">
+                        
+                        <div class="card-stacked">
+                            <div class="card-content">
+                            <p>Fazer login com:</p>
+                            </div>
+                            <div class="card-action">
+                            <a href="#">This is a link</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </div> 
+        <script>
+             $(document).ready(function(){
+                    $('ul.tabs').tabs();
+                });
+        </script>
+        <script type="script" src="js/materialize.js"></script>
+        <script type="script" src="js/materialize.min.js"></script>
     </body>
 </html>
